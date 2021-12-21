@@ -66,7 +66,48 @@ TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e354ce72d5cc6a1d27c4d.jpg",
                          "https://telegra.ph/file/1c6a5cd6d82f92c646c0f.jpg", 
                          "https://telegra.ph/file/2c1056c91c8f37fea838a.jpg",
                          "https://telegra.ph/file/f140c121d03dfcaf4e951.jpg", 
-                         "https://telegra.ph/file/39f7b5d1d7a3487f6ba69.jpg"
+                         "https://telegra.ph/file/39f7b5d1d7a3487f6ba69.jpg",
+                         "https://telegra.ph/file/7f9bef5570f0f764309ee.jpg",
+                         "https://telegra.ph/file/ed0d2ac32dd50d7295f17.jpg",
+                         "https://telegra.ph/file/67cd08641f1b9f1f54869.jpg",
+                         "https://telegra.ph/file/f09e1380def35a96bac42.jpg",
+                         "https://telegra.ph/file/74a2f6fbaafcc128c31db.jpg",
+                         "https://telegra.ph/file/beb247ead8fc8de48eb29.jpg",
+                         "https://telegra.ph/file/c84d58af99680399eb896.jpg",
+                         "https://telegra.ph/file/ff52ac1dd036490afe4cd.jpg",
+                         "https://telegra.ph/file/6db640a5693a3bcd04fe8.jpg",
+                         "https://telegra.ph/file/f612c796cbd7f303fc146.jpg",
+                         "https://telegra.ph/file/03e5422178712345fc1b5.jpg",
+                         "https://telegra.ph/file/71d47c6d905fa61500e5b.jpg",
+                         "https://telegra.ph/file/0ef7ca152687c826ad437.jpg",
+                         "https://telegra.ph/file/630a29617b90ab88a0989.jpg",
+                         "https://telegra.ph/file/1ff2987b6840641b3325b.jpg",
+                         "https://telegra.ph/file/b9003d909fa1861d879e2.jpg",
+                         "https://telegra.ph/file/d4ffd56dbff61bc041c76.jpg",
+                         "https://telegra.ph/file/766b3826c5488b1b43752.jpg",
+                         "https://telegra.ph/file/3aea4fe4f03131c19a196.jpg",
+                         "https://telegra.ph/file/59d06586c81c3379390c6.jpg",
+                         "https://telegra.ph/file/08deab8e24d343f12a89d.jpg",
+                         "https://telegra.ph/file/8fee8514c8c39fc522950.jpg",
+                         "https://telegra.ph/file/8b4753ba089bfb20c7573.jpg",
+                         "https://telegra.ph/file/684cb7f5fa163c8481e1f.jpg",
+                         "https://telegra.ph/file/947f37d4c8ede9ac8b795.jpg",
+                         "https://telegra.ph/file/f70d4eff851c04681ab0e.jpg",
+                         "https://telegra.ph/file/f5d5b6976ca714e7c4261.jpg",
+                         "https://telegra.ph/file/8b6ad66eea73062c8180e.jpg",
+                         "https://telegra.ph/file/0f427f099b1c2c508ab78.jpg",
+                         "https://telegra.ph/file/b29b95627a74de0836211.jpg",
+                         "https://telegra.ph/file/b51f7f21a8ffea75a45fc.jpg",
+                         "https://telegra.ph/file/814a4fcb85247a7fecd6b.jpg",
+                         "https://telegra.ph/file/b29b95627a74de0836211.jpg",
+                         "https://telegra.ph/file/c466ddb12f5bc701430c7.jpg",
+                         "https://telegra.ph/file/0ea54378212745a06a50c.jpg",
+                         "https://telegra.ph/file/699915193d91f84b60955.jpg",
+                         "https://telegra.ph/file/31971286fc561c91ab24e.jpg",
+                         "https://telegra.ph/file/08fb32491b38d17d96c6c.jpg",
+                         "https://telegra.ph/file/58fcf4dc477d7433be7da.jpg",
+                         "https://telegra.ph/file/8c16e4e3197c95e56a780.jpg",
+                         "https://telegra.ph/file/eb9a441efd9de6d9143a2.jpg",
                          ]
 
 @register(pattern="^/logo ?(.*)")
@@ -100,11 +141,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @TheAnkiVectorBot ⚡️")
+    await tbot.send_file(event.chat_id, fname2, caption="Logo Created By @SlapTapBot 🚀")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @AnkiSupport_Official, {e}')
+   await event.reply(f'Error Go to Help From  @SlapTaps, {e}')
 
 @register(pattern="^/biglogo ?(.*)")
 async def lego(event):
@@ -118,7 +159,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('Creating your logo...')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./AnkiVector/resources/blackbg.jpg')
@@ -137,11 +178,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @TheAnkiVectorBot ⚡️")
+    await tbot.send_file(event.chat_id, fname2, caption="Created By @SlapTapBot 🚀")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @AnkiSupport_Official, {e}')
+   await event.reply(f'Error Go to Help From  @SlapTaps, {e}')
 
 
 @register(pattern="^/wlogo ?(.*)")
@@ -175,11 +216,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @TheAnkiVectorBot")
+    await tbot.send_file(event.chat_id, fname2, caption="Created By @SlapTapBot 🚀")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @AnkiSupport_Official, {e}')
+   await event.reply(f'Error Go to Help From  @SlapTaps, {e}')
 
 @register(pattern="^/daalogo ?(.*)")
 async def logo_gen(event):
@@ -276,7 +317,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('Creating your logo...')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./AnkiVector/resources/blackbg.jpg')
@@ -295,11 +336,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="red")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @TheAnkiVectorBot ⚡️")
+    await tbot.send_file(event.chat_id, fname2, caption="Created By @SlapTapBot 🚀")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @AnkiSupport_Official, {e}')
+   await event.reply(f'Error Go to Help From  @SlapTaps, {e}')
   
 
 @register(pattern="^/pandalogo ?(.*)")
@@ -333,11 +374,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @TheAnkiVectorBot ⚡️")
+    await tbot.send_file(event.chat_id, fname2, caption="Created By @SlapTapBot 🚀")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @AnkiSupport_Official, {e}')
+   await event.reply(f'Error Go to Help From  @SlapTap, {e}')
   
 
 @register(pattern="^/spiderlogo ?(.*)")
@@ -371,15 +412,15 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @TheAnkiVectorBot ⚡️")
+    await tbot.send_file(event.chat_id, fname2, caption="Created By @SlapTapBot 🕸")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @AnkiSupport_Official, {e}')  
+   await event.reply(f'Error Go to Help From  @SlapTapS{e}')  
   
   
   
-@register(pattern="^/spider_man_logo ?(.*)")
+@register(pattern="^/spidermans ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
@@ -410,11 +451,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @TheAnkiVectorBot ⚡️")
+    await tbot.send_file(event.chat_id, fname2, caption="Created By @SlapTapBot ")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @AnkiSupport_Official, {e}')  
+   await event.reply(f'Error Go to Help From  @SlapTaps, {e}')  
   
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
@@ -428,6 +469,7 @@ __help__ = """
  ❍ /redlogo text :
  ❍ /pandalogo text
  ❍ /spiderlogo text
- ❍ /spider_man_logo text
+ ❍ /spidermans text
  """
-__mod_name__ = "Logo Maker"
+__mod_name__ = "Logo Creater"
+
